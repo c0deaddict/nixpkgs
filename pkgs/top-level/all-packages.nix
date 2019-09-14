@@ -5907,6 +5907,8 @@ in
 
   runelite = callPackage ../games/runelite { };
 
+  runlike = with python3Packages; toPythonApplication runlike;
+
   runningx = callPackage ../tools/X11/runningx { };
 
   runzip = callPackage ../tools/archivers/runzip { };

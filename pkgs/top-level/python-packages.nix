@@ -5173,6 +5173,8 @@ in {
 
   ruffus = callPackage ../development/python-modules/ruffus { };
 
+  runlike = callPackage ../development/python-modules/runlike { };
+
   runsnakerun = callPackage ../development/python-modules/runsnakerun { };
 
   pysendfile = callPackage ../development/python-modules/pysendfile { };
