@@ -20399,7 +20399,9 @@ in
 
   wavebox = callPackage ../applications/networking/instant-messengers/wavebox { };
 
-  sonic-pi = libsForQt5.callPackage ../applications/audio/sonic-pi { };
+  sonic-pi = libsForQt5.callPackage ../applications/audio/sonic-pi {
+    ruby = ruby_2_4;
+  };
 
   st = callPackage ../applications/misc/st {
     conf = config.st.conf or null;
