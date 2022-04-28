@@ -13,6 +13,7 @@ let
     if cfg.uboot.enable then
       "${builderUboot} -g ${toString cfg.uboot.configurationLimit} -t ${timeoutStr}"
         + lib.optionalString (dtCfg.name != null) " -n ${dtCfg.name}"
+        + " -r" # noDeviceTree
         + " -c"
     else
       "${builderGeneric} -c";
